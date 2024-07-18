@@ -28,10 +28,10 @@ export class TibberPricePlatform implements DynamicPlatformPlugin {
   ) {
     this.log.debug('Finished initializing platform:', this.config.name);
 
-    const accessToken = this.config['accessToken'];
-    if (!accessToken) {
-      this.log.error('(homebridge-tibber-price) Invalid config! "accessToken" is required. Plugin can not start');
-      return;
+  //  const accessToken = this.config['accessToken'];
+  //  if (!accessToken) {
+  //  this.log.error('(homebridge-tibber-price) Invalid config! "accessToken" is required. Plugin can not start');
+  //    return;
     }
 
     this.tibber = new CachedTibberClient(this);
