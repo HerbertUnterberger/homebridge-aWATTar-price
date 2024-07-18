@@ -11,7 +11,7 @@
         "title": "Tibber Access Token",
         "description": "Your Tibber API key, click the link above to generate one if you don't have one already.",
         "type": "string",
-        "required": true
+        "required": false
       },
       "homeId": {
         "title": "Tibber Home ID",
