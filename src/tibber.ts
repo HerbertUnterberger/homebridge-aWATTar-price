@@ -25,8 +25,7 @@ export class CachedTibberClient {
     this.tibber = new TibberQuery({
       active: true,
       apiEndpoint: {
-        queryUrl: 'https://api.tibber.com/v1-beta/gql',
-        apiKey: config.accessToken,
+        queryUrl: 'https://api.awattar.at/v1/marketdata?start=${encodedStart}&end=${encodedEnd}',
       },
     });
 
